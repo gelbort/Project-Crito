@@ -237,3 +237,12 @@ header .container .menu nav .btn-login {
     display: block;
   }
 }
+
+.brands .container {
+  margin-top: 30px;
+}
+.brands .container img {
+  padding-right: 30px;
+  justify-content: space-between;
+  align-items: center;
+}

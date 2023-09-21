@@ -15,23 +15,69 @@ html, body {
   grid-template-rows: auto 1fr auto;
 }
 
+header {
+  background-color: #f0efea;
+  padding: 16px;
+}
 header .container {
   display: grid;
-  grid-template-columns: auto 1fr auto;
-  grid-template-areas: "logo cib social" "logo menu login";
+  align-items: center;
+  grid-template-columns: 1fr auto;
+  grid-template-areas: "logo bars";
+}
+@media (min-width: 992px) {
+  header .container {
+    grid-template-columns: auto 1fr auto;
+    grid-template-areas: "logo cib social" "logo menu login";
+  }
+}
+header .container .btn-menubars {
+  grid-area: bars;
+  font-size: 25px;
+  border: none;
+  background-color: transparent;
+}
+@media (min-width: 992px) {
+  header .container .btn-menubars {
+    display: none;
+  }
 }
 header .container .logotype {
   grid-area: logo;
 }
 header .container .contactbar {
   grid-area: cib;
+  display: none;
+}
+@media (min-width: 992px) {
+  header .container .contactbar {
+    display: block;
+  }
 }
 header .container .socialmediabar {
   grid-area: social;
+  display: none;
+}
+@media (min-width: 992px) {
+  header .container .socialmediabar {
+    display: block;
+  }
 }
 header .container .mainmenu {
   grid-area: menu;
+  display: none;
+}
+@media (min-width: 992px) {
+  header .container .mainmenu {
+    display: block;
+  }
 }
 header .container .login {
   grid-area: login;
+  display: none;
+}
+@media (min-width: 992px) {
+  header .container .login {
+    display: block;
+  }
 }

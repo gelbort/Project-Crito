@@ -20,30 +20,74 @@ html, body {
 
 
 header {
+    background-color: #f0efea;
+    padding: 16px;
    
  
     
     .container {
-        display: grid;   
-        grid-template-columns: auto 1fr auto;
-        grid-template-areas: "logo cib social"
-                             "logo menu login";
+        display: grid;  
+        align-items: center;
+        grid-template-columns: 1fr auto;
+        grid-template-areas: "logo bars";
+                            
+        
+        @media (min-width: 992px) {
+            grid-template-columns: auto 1fr auto;
+            grid-template-areas: "logo cib social"
+                                 "logo menu login";
 
+        }
+
+
+        .btn-menubars {
+            grid-area: bars;
+            font-size: 25px;
+            border: none;
+            background-color: transparent;
+
+            @media (min-width: 992px) {
+                display: none;
+            } 
+        }
 
         .logotype {
             grid-area: logo;
         }
         .contactbar {
             grid-area: cib;
+            display: none;
+
+            @media (min-width: 992px) {
+                display: block;
+            }
         }
+
         .socialmediabar {
             grid-area: social;
+            display: none;
+
+            @media (min-width: 992px) {
+                display: block;
+            }
         }
+       
         .mainmenu {
             grid-area: menu;
+            display: none;
+
+            @media (min-width: 992px) {
+                display: block;
+            }
         }
+        
         .login {
             grid-area: login;
+            display: none;
+
+            @media (min-width: 992px) {
+                display: block;
+            }
         }
 
     }

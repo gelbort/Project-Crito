@@ -41,6 +41,29 @@ html, body {
 
 }
 
+.btn-transparent {
+    background-color: transparent;
+    border: 1px solid #191919;
+    color: #191919;
+    text-decoration: none;
+    padding: 12px 25px;
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 25px;
+    
+    i {
+        margin-left: 8px;
+        font-size: 0,9em;
+    }
+
+    &:hover {
+        background-color: #191919;
+        border: 1px solid #191919;
+        color: white;
+    }
+
+}
+
 header {
     background-color: #f0efea;
     padding: 16px;
@@ -196,6 +219,88 @@ header {
 
 }
  
+.showcase {
+
+    background-color: #f0efea;
+
+    .container {
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .content {
+            padding-top: 40px;
+            padding-bottom: 40px;
+            text-align: center;
+
+            @media (min-width: 1200px) {
+                text-align: left;
+            }
+            
+            
+            h1 {
+                
+                font-family: 'DM Sans', sans-serif;
+                font-weight: 700;
+                font-size: 40px;
+                text-align: center;
+
+               
+                @media (min-width: 768px) {
+                    font-size: 70px;
+                }
+
+                @media (min-width: 1400px) {
+                    font-size: 86px;
+                }
+
+            }
+
+            p {
+                font-size: 16px;
+                padding-top: 40px;
+                padding-bottom: 40px;
+                padding-left: 10px;
+                padding-right: 10px;
+
+                @media (min-width: 768px) {
+                    font-size: 20px;
+                    padding-left: 0px;
+                    padding-right: 0px;
+                }
+
+            }
+
+            a {
+                margin-right: 0px;
+                margin-bottom: 20px;
+                display: block;
+
+                @media (min-width: 768px) {
+                    display: inline-block;
+                    margin-right: 10px;
+                }
+
+
+            }
+
+        }
+
+        img {
+            display: none;
+            margin-right: -50px;
+
+            @media (min-width: 1200px) {
+                display: block;
+            }
+            
+
+        }
+
+    }
+
+}
 
 
 

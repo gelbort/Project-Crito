@@ -15,6 +15,26 @@ html, body {
   grid-template-rows: auto 1fr auto;
 }
 
+.btn-yellow {
+  background-color: #F9D783;
+  border: 1px solid #F9D783;
+  color: #191919;
+  text-decoration: none;
+  padding: 12px 25px;
+  font-weight: 600;
+  font-size: 16px;
+  border-radius: 25px;
+}
+.btn-yellow i {
+  margin-left: 8px;
+  font-size: 0, 9em;
+}
+.btn-yellow:hover {
+  background-color: #191919;
+  border: 1px solid #191919;
+  color: white;
+}
+
 header {
   background-color: #f0efea;
   padding: 16px;
@@ -28,7 +48,7 @@ header .container {
 @media (min-width: 992px) {
   header .container {
     grid-template-columns: auto 1fr auto;
-    grid-template-areas: "logo cib social" "logo menu login";
+    grid-template-areas: "logo cib social" "logo menu menu";
   }
 }
 header .container .btn-menubars {
@@ -44,15 +64,33 @@ header .container .btn-menubars {
 }
 header .container .logotype {
   grid-area: logo;
+  margin-right: 70px;
 }
 header .container .contactbar {
   grid-area: cib;
   display: none;
+  justify-content: flex-start;
+  align-items: center;
 }
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
   header .container .contactbar {
-    display: block;
+    display: flex;
   }
+}
+header .container .contactbar .content-box {
+  padding-right: 30px;
+  margin-right: 30px;
+  border-right: 1px solid #DAD9D3;
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+}
+header .container .contactbar .content-box i {
+  margin-right: 5px;
+  font-size: 1.2em;
+}
+header .container .contactbar .content-box.last {
+  border: none;
 }
 header .container .socialmediabar {
   grid-area: social;
@@ -63,21 +101,50 @@ header .container .socialmediabar {
     display: block;
   }
 }
-header .container .mainmenu {
+header .container .socialmediabar a {
+  color: #191919;
+  font-size: 1.2rem;
+  margin-left: 10px;
+}
+header .container .socialmediabar a:hover {
+  color: #666666;
+}
+header .container .menu {
   grid-area: menu;
   display: none;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #DAD9D3;
+  margin-top: 10px;
+  padding-top: 10px;
 }
 @media (min-width: 992px) {
-  header .container .mainmenu {
-    display: block;
+  header .container .menu {
+    display: flex;
   }
 }
-header .container .login {
-  grid-area: login;
-  display: none;
+header .container .menu nav a {
+  display: inline-block;
+  color: #191919;
+  text-decoration: none;
+  margin-right: 35px;
+  position: relative;
 }
-@media (min-width: 992px) {
-  header .container .login {
-    display: block;
-  }
+header .container .menu nav a.active {
+  font-weight: 500;
+}
+header .container .menu nav a.active::after, header .container .menu nav a:hover::after {
+  content: "";
+  position: absolute;
+  font-weight: 500;
+  height: 2px;
+  width: 15px;
+  background-color: #191919;
+  left: 50%;
+  bottom: -3px;
+  transform: translate(calc(50% - 15px));
+}
+header .container .menu nav .btn-login {
+  padding-top: 12px;
+  padding-bottom: 12px;
 }

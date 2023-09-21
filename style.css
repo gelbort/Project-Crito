@@ -5,6 +5,7 @@ html, body {
   font-family: "Inter", sans-serif;
   font-size: 16px;
   font-weight: 400;
+  line-height: 1.5;
 }
 
 .wrapper-grid {
@@ -14,26 +15,23 @@ html, body {
   grid-template-rows: auto 1fr auto;
 }
 
-header {
+header .container {
   display: grid;
   grid-template-columns: auto 1fr auto;
-  background-color: #f0efea;
-  padding: 16px;
+  grid-template-areas: "logo cib social" "logo menu login";
 }
-
-.container {
-  display: grid;
-  align-items: center;
-  grid-template-columns: 1fr auto;
-  grid-template-areas: "logo bars";
-}
-.container .btn-menubars {
-  grid-area: bars;
-}
-.container .logotype {
+header .container .logotype {
   grid-area: logo;
-  margin-right: 70px;
 }
-.container .contactbar {
+header .container .contactbar {
   grid-area: cib;
+}
+header .container .socialmediabar {
+  grid-area: social;
+}
+header .container .mainmenu {
+  grid-area: menu;
+}
+header .container .login {
+  grid-area: login;
 }

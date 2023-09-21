@@ -6,6 +6,7 @@ html, body {
     font-family: 'Inter', sans-serif;
     font-size: 16px;
     font-weight: 400;
+    line-height: 1.5;
 
 }
 
@@ -19,38 +20,38 @@ html, body {
 
 
 header {
-    display: grid;
-    grid-template-columns: auto 1fr auto;
-    background-color: #f0efea;
-    padding: 16px;
-
+   
  
-}
-
-
-
-
-
+    
     .container {
-        
-        display: grid;
-        align-items: center;
-        grid-template-columns: 1fr auto;
-        grid-template-areas:    "logo bars";    
+        display: grid;   
+        grid-template-columns: auto 1fr auto;
+        grid-template-areas: "logo cib social"
+                             "logo menu login";
 
-
-        .btn-menubars {
-            grid-area: bars;
-        }
 
         .logotype {
             grid-area: logo;
-            margin-right: 70px;
         }
-
         .contactbar {
             grid-area: cib;
         }
+        .socialmediabar {
+            grid-area: social;
+        }
+        .mainmenu {
+            grid-area: menu;
+        }
+        .login {
+            grid-area: login;
+        }
 
-        
     }
+
+
+}
+ 
+
+
+
+   

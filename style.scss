@@ -410,11 +410,14 @@ header {
          }
 
 
-            article {
+            .project {
 
                 display: grid;
                 grid-template-columns: 1fr;
                 grid-template-rows: auto 1fr auto;
+                color: #191919;
+                text-decoration: none;
+
 
                 
 
@@ -434,7 +437,7 @@ header {
 
                 }
 
-                a {
+                .readmore {
                     padding: 15px;
                     display: block;
                     text-align: right;
@@ -447,7 +450,12 @@ header {
                     i {
                         margin-left: 3px;
                     }
-                    
+                                      
+                }
+
+                &:hover .readmore {
+                    text-decoration: underline;
+                    text-decoration-color: #191919;
                 }
             }
 

@@ -308,16 +308,18 @@ header .container .menu nav .btn-login {
     grid-template-columns: 1fr 1fr;
   }
 }
-.project-and-case .container .project-and-cases article {
+.project-and-case .container .project-and-cases .project {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto 1fr auto;
+  color: #191919;
+  text-decoration: none;
 }
-.project-and-case .container .project-and-cases article img {
+.project-and-case .container .project-and-cases .project img {
   width: 100%;
   height: auto;
 }
-.project-and-case .container .project-and-cases article h3 {
+.project-and-case .container .project-and-cases .project h3 {
   font-family: "DM Sans", sans-serif;
   font-weight: 700;
   font-size: 22px;
@@ -325,7 +327,7 @@ header .container .menu nav .btn-login {
   padding-bottom: 16px;
   border-bottom: 1px solid #DAD9D3;
 }
-.project-and-case .container .project-and-cases article a {
+.project-and-case .container .project-and-cases .project .readmore {
   padding: 15px;
   display: block;
   text-align: right;
@@ -335,8 +337,12 @@ header .container .menu nav .btn-login {
   font-weight: 400;
   text-decoration: none;
 }
-.project-and-case .container .project-and-cases article a i {
+.project-and-case .container .project-and-cases .project .readmore i {
   margin-left: 3px;
+}
+.project-and-case .container .project-and-cases .project:hover .readmore {
+  text-decoration: underline;
+  text-decoration-color: #191919;
 }
 .project-and-case .container .center-content {
   margin-top: 50px;

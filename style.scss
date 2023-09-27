@@ -357,6 +357,96 @@ header {
 
 }
 
+.features {
+    
+
+    .container {
+        display: grid;  
+        align-items: center;
+        grid-template-columns: 1fr;
+        // grid-template-areas: "title badv startup"
+        //                       "btn radv risk"  ;
+        
+        @media (min-width: 992px) {
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas: "title badv startup"
+                              "btn radv risk"  ;
+                              
+        // border: solid 1px black;
+        padding-left: 100px;
+        padding-right: 40px;
+        padding-bottom: 60px;
+        border-color: rgba(25,25,25,0.2 );
+        border-width: 1.2000000476837158px;
+        border-style: solid;
+        border-radius: 2px;
+
+
+        .section-title {
+            grid-area: title;
+            padding-right: 20px;
+            
+        }
+
+        .featbtn {
+            grid-area: btn;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            padding-right: 50px;
+
+            @media (min-width: 768px) {
+                
+                margin-bottom: 20px;
+            }
+
+            
+        }
+        .featurebox {
+           
+            h4 {
+                
+                font-size: 22px;
+                font-weight: 700;
+            }
+
+            p {
+                font-family: "Inter";
+                font-size: 16px;
+                font-weight: normal;
+                line-height: 25px;
+                font-style: normal;
+                text-align: left;
+            }
+        }
+
+        .businessadvice {
+            
+            grid-area: badv;
+                                   
+        }
+
+        .financialadvice {
+            grid-area: radv;
+            
+        }
+        .startupadvice {
+            grid-area: startup;
+            
+        }
+        .riskmanagement {
+            grid-area: risk;
+            
+        }
+
+    }
+    
+    
+}
+
+}
+
 .brands {
 
     
@@ -368,6 +458,7 @@ header {
         justify-content: space-between;
         align-items: center;
         text-align: center;
+        padding-bottom: 40px;
 
     //     .brands-mobile {display:none}
     //   @media all and (max-width :767) {

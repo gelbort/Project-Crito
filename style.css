@@ -285,11 +285,74 @@ header .container .menu nav .btn-login {
   }
 }
 
+.features .container {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr;
+}
+@media (min-width: 992px) {
+  .features .container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "title badv startup" "btn radv risk";
+    padding-left: 100px;
+    padding-right: 40px;
+    padding-bottom: 60px;
+    border-color: rgba(25, 25, 25, 0.2);
+    border-width: 1.2000000477px;
+    border-style: solid;
+    border-radius: 2px;
+  }
+  .features .container .section-title {
+    grid-area: title;
+    padding-right: 20px;
+  }
+  .features .container .featbtn {
+    grid-area: btn;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding-right: 50px;
+  }
+}
+@media (min-width: 992px) and (min-width: 768px) {
+  .features .container .featbtn {
+    margin-bottom: 20px;
+  }
+}
+@media (min-width: 992px) {
+  .features .container .featurebox h4 {
+    font-size: 22px;
+    font-weight: 700;
+  }
+  .features .container .featurebox p {
+    font-family: "Inter";
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 25px;
+    font-style: normal;
+    text-align: left;
+  }
+  .features .container .businessadvice {
+    grid-area: badv;
+  }
+  .features .container .financialadvice {
+    grid-area: radv;
+  }
+  .features .container .startupadvice {
+    grid-area: startup;
+  }
+  .features .container .riskmanagement {
+    grid-area: risk;
+  }
+}
+
 .brands .container {
   margin-top: 30px;
   justify-content: space-between;
   align-items: center;
   text-align: center;
+  padding-bottom: 40px;
 }
 .brands .container img {
   padding-right: 30px;

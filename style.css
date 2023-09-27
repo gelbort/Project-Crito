@@ -362,6 +362,101 @@ header .container .menu nav .btn-login {
   }
 }
 
+.about {
+  justify-content: space-between;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 40px;
+}
+.about .container {
+  display: grid;
+  justify-content: center;
+  justify-items: auto;
+  align-items: top;
+  grid-template-columns: 1fr;
+}
+@media (min-width: 968px) {
+  .about .container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.about .container .infobox {
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+.about .container .infobox h4 {
+  font-family: "Inter";
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22px;
+  color: #f94d1c;
+  padding-bottom: 40px;
+}
+.about .container .infobox h3 {
+  font-family: "DM Sans";
+  font-size: 16px;
+  font-weight: bold;
+}
+.about .container .infobox p {
+  font-family: "Inter";
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22px;
+  color: #000000;
+}
+.about .container .infobox .btn {
+  padding: 15px;
+  display: block;
+  justify-content: space-between;
+  text-align: left;
+  color: #191919;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: none;
+}
+.about .container .samantha {
+  position: relative;
+}
+.about .container .samantha img {
+  padding-top: 20px;
+  height: auto;
+  max-width: 100%;
+}
+.about .container .text-block {
+  flex-wrap: wrap;
+  text-align: start;
+  padding: 15px;
+  position: absolute;
+  bottom: 60px;
+  left: -30px;
+  background-color: #BEEBFF;
+  color: white;
+}
+.about .container .text-block .name {
+  display: flex;
+  align-items: center;
+}
+.about .container .text-block .name h3 {
+  font-family: "DM Sans";
+  font-size: 23px;
+  font-weight: bold;
+  color: #191919;
+}
+.about .container .text-block .name h4 {
+  font-family: "DM Sans";
+  font-size: 16px;
+  font-weight: bold;
+  color: #F94D1C;
+}
+.about .container .text-block p {
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 500;
+  color: #191919;
+}
+
 .project-and-case .container .section-title {
   text-align: center;
 }
@@ -414,64 +509,4 @@ header .container .menu nav .btn-login {
 .project-and-case .container .center-content {
   margin-top: 50px;
   margin-bottom: 90px;
-}
-
-.about-company {
-  padding-top: 80px;
-  grid-template-columns: 1fr;
-}
-@media (min-width: 768px) {
-  .about-company {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-.about-company .container {
-  display: grid;
-  align-items: center;
-  grid-template-columns: 1fr;
-  grid-template-columns: 1fr 1fr;
-  grid-template-areas: "sam company" "sam btns";
-}
-.about-company .container .samantha {
-  grid-area: sam;
-  padding-right: 50px;
-}
-.about-company .container .samantha .text-block {
-  position: relative;
-  bottom: 230px;
-  right: 40px;
-  background-color: #BEEBFF;
-  color: white;
-  padding-left: 20px;
-  padding-right: 20px;
-  width: 368px;
-  height: 180px;
-}
-.about-company .container .samantha .text-block h3 {
-  padding-top: 25px;
-  font-family: "DM Sans";
-  font-size: 23px;
-  font-weight: bold;
-  color: #191919;
-}
-.about-company .container .samantha .text-block h4 {
-  padding-top: 25px;
-  color: #F94D1C;
-  font-family: "DM Sans";
-  font-size: 16px;
-  font-weight: bold;
-}
-.about-company .container .samantha .text-block .name {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.about-company .container .company {
-  grid-area: company;
-}
-.about-company .container .company .section-title .infotext p {
-  font-family: "Inter";
-  font-size: 16px;
-  font-weight: normal;
-  color: rgba(25, 25, 25, 0.7);
 }

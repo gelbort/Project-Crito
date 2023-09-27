@@ -473,7 +473,131 @@ header {
     }
 }
 
+.about {
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 40px;
 
+    .container {
+        display: grid;
+        justify-content: center;
+        justify-items: auto;
+        align-items: top;
+        grid-template-columns: 1fr;
+    
+        @media (min-width: 968px) {
+            grid-template-columns: 1fr 1fr;
+        }
+    
+        
+    
+        .infobox {
+            padding-top: 20px;
+            padding-bottom: 40px;
+    
+            h4 {
+                font-family: "Inter";
+                font-size: 18px;
+                font-weight: 500;
+                line-height: 22px;
+                color: #f94d1c;
+                padding-bottom: 40px;
+    
+            }
+    
+            h3 {
+                font-family: "DM Sans";
+                font-size: 16px;
+                font-weight: bold;
+    
+            }
+    
+            p {
+                font-family: "Inter";
+                font-size: 18px;
+                font-weight: 500;
+                line-height: 22px;
+                color: #000000;
+                
+            }
+
+            .btn {
+                padding: 15px;
+                display: block;
+                justify-content: space-between;
+                text-align: left;
+                color: #191919;
+                font-family: 'Inter', sans-serif;
+                font-size: 16px;
+                font-weight: 400;
+                text-decoration: none;
+            }
+            
+        
+        
+        
+        }
+
+        .samantha {
+            position: relative;
+        }
+    
+        .samantha img{
+            padding-top: 20px;
+            height: auto;
+            max-width: 100%;
+           
+            
+          
+        }
+        .text-block {
+            flex-wrap: wrap;
+            text-align: start;
+            padding: 15px;   
+            position: absolute;
+            bottom: 60px;
+            left: -30px;
+            background-color: #BEEBFF;
+            color: white;
+
+            .name {
+                display: flex;
+                align-items: center;
+               
+                h3 {
+
+                    font-family: "DM Sans";
+                    font-size: 23px;
+                    font-weight: bold;
+                    color: #191919;                  
+                }
+
+                h4 {
+                   
+                    font-family: "DM Sans";
+                    font-size: 16px;
+                    font-weight: bold;
+                    color: #F94D1C;
+                
+                    
+                }
+            }
+            
+         
+            p {
+                font-family: "Inter";
+                font-size: 16px;
+                font-weight: 500;
+                color: #191919;
+            }
+            
+          }
+        
+    }
+    
+}
 
 .project-and-case {
     
@@ -553,110 +677,3 @@ header {
     }
 }
 
-.about-company {
-
-    padding-top: 80px;
-    grid-template-columns: 1fr; 
-    
-
-    @media (min-width: 768px) {
-        grid-template-columns: 1fr 1fr;     
-     }
-    .container {
-        
-        display: grid;  
-        align-items: center;
-        grid-template-columns: 1fr;
-        
-            grid-template-columns: 1fr 1fr;
-            grid-template-areas: "sam company"
-                                 "sam btns"   ;
-                                 
-        
-
-        .samantha {
-            grid-area: sam;
-
-            padding-right: 50px;
-            
-            .text-block {
-                position: relative;
-                bottom: 230px;
-                right: 40px;
-                background-color: #BEEBFF;
-                color: white;
-                padding-left: 20px;
-                padding-right: 20px;
-                width: 368px;
-                height: 180px;
-
-                h3 {
-                    padding-top: 25px;
-                    font-family: "DM Sans";
-                    font-size: 23px;
-                    font-weight: bold;
-                    color: #191919;
-                }
-
-                h4 {
-                    padding-top: 25px;
-                    color: #F94D1C;
-                    font-family: "DM Sans";
-                    font-size: 16px;
-                    font-weight: bold;
-                }
-
-                .name {
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                }
-
-                
-              }
-            
-
-        }
-
-        .company {
-            grid-area: company;
-            
-            .section-title {
-
-                .infotext {
-                    p {
-                    font-family: "Inter";
-                    font-size: 16px;
-                    font-weight: normal;
-                    color: rgba(25,25,25,0.7 );
-                    }
-                }
-            }
-
-            
-        }
-
-        
-    }
-
-}
-
-// .about-company {
-
-//     padding-top: 60px;
-
-//     .container {
-//         display: flex;
-//         justify-content: space-between;
-//         align-items: center;
-
-//         .section-title {
-          
-//             p {
-//                 padding-bottom: 10px;
-//             }
-
-//         }
-      
-//     }
-// }

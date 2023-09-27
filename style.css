@@ -285,6 +285,17 @@ header .container .menu nav .btn-login {
   }
 }
 
+.brands .container {
+  margin-top: 30px;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 40px;
+}
+.brands .container img {
+  padding-right: 30px;
+}
+
 .features .container {
   display: grid;
   align-items: center;
@@ -324,6 +335,7 @@ header .container .menu nav .btn-login {
   .features .container .featurebox h4 {
     font-size: 22px;
     font-weight: 700;
+    padding-bottom: 20px;
   }
   .features .container .featurebox p {
     font-family: "Inter";
@@ -332,6 +344,9 @@ header .container .menu nav .btn-login {
     line-height: 25px;
     font-style: normal;
     text-align: left;
+  }
+  .features .container .featurebox i {
+    padding-bottom: 20px;
   }
   .features .container .businessadvice {
     grid-area: badv;
@@ -345,17 +360,6 @@ header .container .menu nav .btn-login {
   .features .container .riskmanagement {
     grid-area: risk;
   }
-}
-
-.brands .container {
-  margin-top: 30px;
-  justify-content: space-between;
-  align-items: center;
-  text-align: center;
-  padding-bottom: 40px;
-}
-.brands .container img {
-  padding-right: 30px;
 }
 
 .project-and-case .container .section-title {
@@ -410,4 +414,64 @@ header .container .menu nav .btn-login {
 .project-and-case .container .center-content {
   margin-top: 50px;
   margin-bottom: 90px;
+}
+
+.about-company {
+  padding-top: 80px;
+  grid-template-columns: 1fr;
+}
+@media (min-width: 768px) {
+  .about-company {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.about-company .container {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "sam company" "sam btns";
+}
+.about-company .container .samantha {
+  grid-area: sam;
+  padding-right: 50px;
+}
+.about-company .container .samantha .text-block {
+  position: relative;
+  bottom: 230px;
+  right: 40px;
+  background-color: #BEEBFF;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 368px;
+  height: 180px;
+}
+.about-company .container .samantha .text-block h3 {
+  padding-top: 25px;
+  font-family: "DM Sans";
+  font-size: 23px;
+  font-weight: bold;
+  color: #191919;
+}
+.about-company .container .samantha .text-block h4 {
+  padding-top: 25px;
+  color: #F94D1C;
+  font-family: "DM Sans";
+  font-size: 16px;
+  font-weight: bold;
+}
+.about-company .container .samantha .text-block .name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about-company .container .company {
+  grid-area: company;
+}
+.about-company .container .company .section-title .infotext p {
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: normal;
+  color: rgba(25, 25, 25, 0.7);
 }

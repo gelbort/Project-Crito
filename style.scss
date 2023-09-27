@@ -357,10 +357,32 @@ header {
 
 }
 
-.features {
-    
+.brands {
 
+    
+    
+    
     .container {
+        
+        margin-top: 30px;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        padding-bottom: 40px;
+
+     
+       
+        img {
+            padding-right: 30px;
+            
+                              
+        }
+    }
+
+}
+
+.features {
+       .container {
         display: grid;  
         align-items: center;
         grid-template-columns: 1fr;
@@ -370,7 +392,7 @@ header {
         @media (min-width: 992px) {
             grid-template-columns: 1fr 1fr;
             grid-template-areas: "title badv startup"
-                              "btn radv risk"  ;
+                                 "btn radv risk"  ;
                               
         // border: solid 1px black;
         padding-left: 100px;
@@ -396,19 +418,22 @@ header {
             text-align: center;
             padding-right: 50px;
 
+            
+
             @media (min-width: 768px) {
                 
                 margin-bottom: 20px;
             }
-
             
         }
+
         .featurebox {
            
             h4 {
                 
                 font-size: 22px;
                 font-weight: 700;
+                padding-bottom: 20px;
             }
 
             p {
@@ -418,13 +443,16 @@ header {
                 line-height: 25px;
                 font-style: normal;
                 text-align: left;
+               
+                
+            }
+            i {
+                padding-bottom: 20px;
             }
         }
 
         .businessadvice {
-            
             grid-area: badv;
-                                   
         }
 
         .financialadvice {
@@ -441,49 +469,14 @@ header {
         }
 
     }
-    
-    
-}
-
-}
-
-.brands {
-
-    
-    
-    
-    .container {
-        
-        margin-top: 30px;
-        justify-content: space-between;
-        align-items: center;
-        text-align: center;
-        padding-bottom: 40px;
-
-    //     .brands-mobile {display:none}
-    //   @media all and (max-width :767) {
-    //   .brands-desktop {
-    //     display:none;
-    //   }
-    //  .mobile-view{ 
-    //   display:block;
-    //   }
-    //  }
-
-        
-       
-        img {
-            padding-right: 30px;
             
-                              
-        }
     }
-
 }
+
+
 
 .project-and-case {
     
-      
 
     .container {
         
@@ -559,3 +552,111 @@ header {
 
     }
 }
+
+.about-company {
+
+    padding-top: 80px;
+    grid-template-columns: 1fr; 
+    
+
+    @media (min-width: 768px) {
+        grid-template-columns: 1fr 1fr;     
+     }
+    .container {
+        
+        display: grid;  
+        align-items: center;
+        grid-template-columns: 1fr;
+        
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas: "sam company"
+                                 "sam btns"   ;
+                                 
+        
+
+        .samantha {
+            grid-area: sam;
+
+            padding-right: 50px;
+            
+            .text-block {
+                position: relative;
+                bottom: 230px;
+                right: 40px;
+                background-color: #BEEBFF;
+                color: white;
+                padding-left: 20px;
+                padding-right: 20px;
+                width: 368px;
+                height: 180px;
+
+                h3 {
+                    padding-top: 25px;
+                    font-family: "DM Sans";
+                    font-size: 23px;
+                    font-weight: bold;
+                    color: #191919;
+                }
+
+                h4 {
+                    padding-top: 25px;
+                    color: #F94D1C;
+                    font-family: "DM Sans";
+                    font-size: 16px;
+                    font-weight: bold;
+                }
+
+                .name {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+
+                
+              }
+            
+
+        }
+
+        .company {
+            grid-area: company;
+            
+            .section-title {
+
+                .infotext {
+                    p {
+                    font-family: "Inter";
+                    font-size: 16px;
+                    font-weight: normal;
+                    color: rgba(25,25,25,0.7 );
+                    }
+                }
+            }
+
+            
+        }
+
+        
+    }
+
+}
+
+// .about-company {
+
+//     padding-top: 60px;
+
+//     .container {
+//         display: flex;
+//         justify-content: space-between;
+//         align-items: center;
+
+//         .section-title {
+          
+//             p {
+//                 padding-bottom: 10px;
+//             }
+
+//         }
+      
+//     }
+// }
